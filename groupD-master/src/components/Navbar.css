@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.combinedlogo {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.6875rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, .2);
+}
+
+.navtitle {
+    font-size: 1.25rem;
+    font-family: "Source Serif Pro";
+    color: #0566AA;
+}
+
+@media screen and (min-width: 81.9375rem) {
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 75%;
+    }
+
+    .dashboardlink,
+    .acadyearlink,
+    .acadtermlink,
+    .schedulelink,
+    .roomlink,
+    .yearlevellink,
+    .departmentlink,
+    .instructorlink,
+    .programlink,
+    .courselink,
+    .blocklink,
+    .studentlink,
+    .logoutlink {
+        text-decoration: none;
+        color: #464646;
+        font-size: 0.75rem;
+        padding: 0.3125rem 0.3125rem;
+        margin: 0 0.625rem;
+        cursor: pointer;
+        font-family: "Montserrat";
+        font-weight: 600;
+    }
+}
+
+.logoutlink {
+    border: 0.0625rem solid #464646;
+    border-radius: 0.3125rem;
+}
+
+.mobile-menu-icon {
+    color: #0566AA;
+    display: none;
+}
+
+
+@media screen and (max-width: 1321px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #0566AA;
+        left: 0;
+        top: 4.6875rem;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .acadyearlink,
+    .acadtermlink,
+    .schedulelink,
+    .roomlink,
+    .yearlevellink,
+    .departmentlink,
+    .instructorlink,
+    .programlink,
+    .courselink,
+    .blocklink,
+    .studentlink,
+    .logoutlink {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        transition: all 0.5s ease;
+        font-family: "Montserrat";
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 1.875rem;
+        color: #0566AA;
+        background-color: white;
+        align-items: center;
+        border: none;
+        outline: none;
+        top: 0.9375rem;
+        right: 1.5625rem;
+    }
+    .logoutlink {
+        border-color: transparent;
+        border-radius: 0.3125rem;
+        align-items: center;
+        justify-items: center;
+        padding: 1rem;
+        font-size: 15px;
+        margin-left: -30px;
+    }
+}

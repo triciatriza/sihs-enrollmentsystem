@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+
+body {
+    background-color: #F9F9F9;
+    color: #464646;
+}
+
+.top {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Source Serif Pro";
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+    line-height: 3rem;
+}
+
+h2{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 2.1875rem;;
+}
+
+p{
+    font-family: "Montserrat";
+}
+
+.cardtitle{
+    font-weight: 700;
+    font-size: 1.5625rem;
+}
+
+.totaltitle{
+    font-family: "Source Serif Pro";
+    font-size: 0.9375rem;
+}
+
+.wrapper {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.25rem;
+    margin: 3% auto 0 auto;
+    max-width: 75vw;
+    min-height: 55vh;
+}
+
+.wrapper div {
+    border-radius: 0.625rem;
+    padding: 0.625rem;  
+    color: #464646;
+    font-family: "Montserrat";
+    padding: 10%;
+    padding-top: 15%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}     
+
+.wrapper div:hover{
+    box-shadow: -0.75rem -0.75rem 1.5rem rgba(255, 255, 255, 0.16), 0.75rem 0.75rem 1.5rem rgba(148, 148, 148, 0.25);
+}
+
+.departmentcard{
+    background-color: #E8FBFF;
+}
+
+.instructorcard{
+    background-color: #D7F9FF;
+}
+
+.programcard{
+    background-color: #BDF5FF;
+}
+
+.coursecard{
+    background-color: #EBF7FF;
+}
+
+.blockcard{
+    background-color: #D4EDFF;
+}
+
+.studentcard{
+    background-color: #BEE4FF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dashboardbody{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 625px){
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dashboardbody{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
